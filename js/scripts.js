@@ -7,19 +7,21 @@ $(document).ready(function() {
       const q4 = parseInt($("#q4").val());
       const q5 = parseInt($("#q5").val());
       const result = q1 + q2 + q3 + q4 +q5;
-      console.log(result);
+      
      
       if (result > 4 && result <11) {
-        recommendation = "option 1";
+        recommendation = "Javascript";
       } else if (result > 10 && result < 16 ) {
-        recommendation = "option 2";
+        recommendation = "Python";
       } else if (result > 15 && result < 20) {
-        recommendation = "option 3";
+        recommendation = "C#";
       } else if (result === 20) {
-          recommendation = "option 4"
+          recommendation = "nothing. You didn't take this quiz seriously! I forgive you though"
       } else {
-          recommendation = "complete survery";
+          recommendation = "complete survey";
       }
-      console.log(recommendation);
+      
+      $(".answer").text(recommendation);
+      $("#suggestion").show();
     });
 });
