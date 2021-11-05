@@ -11,12 +11,16 @@ $(document).ready(function() {
      
       if (result > 4 && result <11) {
         recommendation = "Javascript";
+        $(".js").show();
       } else if (result > 10 && result < 16 ) {
         recommendation = "Python";
+        $(".p").show();
       } else if (result > 15 && result < 20) {
         recommendation = "C#";
+        $(".c").show();
       } else if (result === 20) {
           recommendation = "nothing. You didn't take this quiz seriously! I forgive you though"
+          $("t").show();
       } else {
           recommendation = "complete survey";
       }

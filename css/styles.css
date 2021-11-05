@@ -1,3 +1,31 @@
 #suggestion {
     display: none;
+    overflow: auto;
+    padding: 10px;
+    margin: 5px;
+    border-width: 1px;
+    border: solid red
+}
+
+select {
+    width: 100%;
+    padding:10px;
+    border-radius:10px;
+  }
+
+  .buttonStyle{
+    text-align: right;
+  }
+
+.pure-button-primary {
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    display: none;
 }
