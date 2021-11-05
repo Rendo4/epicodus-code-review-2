@@ -1,3 +1,10 @@
+function hide () {
+  $(".c").hide();
+  $(".p").hide();
+  $(".js").hide();
+  $(".t").hide();
+}
+
 $(document).ready(function() {
     $("#info").submit(function(event) {
       event.preventDefault();
@@ -7,7 +14,7 @@ $(document).ready(function() {
       const q4 = parseInt($("#q4").val());
       const q5 = parseInt($("#q5").val());
       const result = q1 + q2 + q3 + q4 +q5;
-      
+      hide();
      
       if (result > 4 && result <11) {
         recommendation = "Javascript";
@@ -20,7 +27,7 @@ $(document).ready(function() {
         $(".c").show();
       } else if (result === 20) {
           recommendation = "nothing. You didn't take this quiz seriously! I forgive you though"
-          $("t").show();
+          $(".t").show();
       } else {
           recommendation = "complete survey";
       }
